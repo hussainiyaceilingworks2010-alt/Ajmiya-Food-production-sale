@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajmiya Food Production & Sale | The Khoja's Brand</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --sky-blue: #4db7fe;
+            --deep-blue: #1c2780;
+            --bg-light: #f4f9ff;
+            --card-bg: #ffffff;
+            --veg-green: #00873e;
+            --whatsapp-green: #25d366;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: #1a202c;
+            line-height: 1.5;
+        }
+
+        /* HEADER IMAGE CONTAINER */
+        header {
+            background: #ffffff;
+            text-align: center;
+            border-bottom: 3px solid var(--sky-blue);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .header-img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* MAIN CONTAINER */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .section-header {
+            text-align: center;
+            color: var(--deep-blue);
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        /* PRODUCTS GRID */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.25rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.25rem;
+            border: 1px solid #d0e4ff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+            border-color: var(--sky-blue);
+        }
+
+        .card-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--deep-blue);
+            margin-bottom: 0.4rem;
+        }
+
+        .card-desc {
+            font-size: 0.9rem;
+            color: #4a5568;
+            margin-bottom: 1rem;
+        }
+
+        .tag {
+            background: #e2f2ff;
+            color: #0066cc;
+            font-size: 0.78rem;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 20px;
+            width: fit-content;
+        }
+
+        /* PACK DETAILS BOX */
+        .label-details {
+            background: #ffffff;
+            border: 2px dashed var(--sky-blue);
+            border-radius: 10px;
+            padding: 1.25rem;
+            margin-top: 2.5rem;
+            font-size: 0.85rem;
+            color: #2d3748;
+        }
+
+        .fssai-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            color: var(--veg-green);
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid #edf2f7;
+        }
+
+        .contact-row {
+            color: var(--deep-blue);
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-top: 8px;
+            border-top: 1px solid #edf2f7;
+            padding-top: 8px;
+        }
+
+        /* ORDER BUTTON */
+        .btn-whatsapp {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background-color: var(--whatsapp-green);
+            color: white;
+            padding: 14px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            margin: 2rem auto 0;
+            max-width: 320px;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #20b054;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem 1rem;
+            background: var(--deep-blue);
+            color: #ffffff;
+            font-size: 0.85rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="ajmiya-header.png" alt="Ajmiya Food Production & Sale - Khoja's" class="header-img">
+    </header>
+
+    <div class="container">
+        <h2 class="section-header">Our Product Range</h2>
+
+        <div class="grid">
+            <div class="card">
+                <div>
+                    <h3 class="card-title">Banana Chips (Classic Salt)</h3>
+                    <p class="card-desc">Crispy, golden sliced plantains prepared daily and lightly seasoned with salt.</p>
+                </div>
+                <span class="tag">Net Wt: 250g | 500g</span>
+            </div>
+
+            <div class="card">
+                <div>
+                    <h3 class="card-title">Banana Chips (Sweet Style)</h3>
+                    <p class="card-desc">Authentic sweet Kerala banana chips fried to deep golden perfection.</p>
+                </div>
+                <span class="tag">Sweet Classic</span>
+            </div>
+
+            <div class="card">
+                <div>
+                    <h3 class="card-title">Banana Chips (Spicy Masala)</h3>
+                    <p class="card-desc">Plantains tossed in our signature bold masala spice blend.</p>
+                </div>
+                <span class="tag">Spicy Favorite</span>
+            </div>
+
+            <div class="card">
+                <div>
+                    <h3 class="card-title">Diamond Cut (Jaggery & Sesame)</h3>
+                    <p class="card-desc">Diamond-shaped crisp snacks coated in pure jaggery and topped with sesame seeds.</p>
+                </div>
+                <span class="tag">Jaggery Special</span>
+            </div>
+
+            <div class="card">
+                <div>
+                    <h3 class="card-title">Thatta Murukku</h3>
+                    <p class="card-desc">Traditional crunchy rice and lentil snack discs with authentic seasoning.</p>
+                </div>
+                <span class="tag">Tea-Time Classic</span>
+            </div>
+
+            <div class="card">
+                <div>
+                    <h3 class="card-title">Crispy Kurkure</h3>
+                    <p class="card-desc">Crunchy, twisted snacks packed with intense, savory masala seasoning.</p>
+                </div>
+                <span class="tag">Crunchy Favorite</span>
+            </div>
+        </div>
+
+        <div class="label-details">
+            <div class="fssai-row">
+                <span>fssai</span>
+                <span style="font-weight:400; color:#4a5568;">Lic No: 21319211000195</span>
+            </div>
+            <p><strong>Factory Address:</strong> Door No. 13/86 Bank Jn., Alanallur, Palakkad Dist., Kerala - 678 601</p>
+            <div class="contact-row">Mob: +91 8606125075 | +91 08592078175</div>
+        </div>
+
+        <a href="https://wa.me/918606125075?text=Hello%20Ajmiya%20Food%20Team,%20I%20want%20to%20place%20an%20order." class="btn-whatsapp" target="_blank">
+            Order via WhatsApp
+        </a>
+    </div>
+
+    <footer>
+        <p>© Ajmiya Food Production & Sale — A Quality Product from <strong>KHOJA'S</strong></p>
+    </footer>
+
+</body>
+</html>
